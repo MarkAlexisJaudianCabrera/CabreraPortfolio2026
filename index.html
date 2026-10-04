@@ -14,17 +14,18 @@
       if (l) l.classList.add("done");
     }, 2500);
   </script>
+   <link rel="icon" type="image/png" href="assets/logo.ico" sizes="32x32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="loader" id="loader" aria-hidden="true"><span>...</span></div>
+  <div class="loader" id="loader" aria-hidden="true"><span><img src="assets/logo.ico" alt="Portfolio." class="logo"></span></div>
   <div class="progress" id="progress"></div>
 
   <header class="navbar">
-    <a href="#home" class="logo">Portfolio.</a>
+    <a href="#home" class="logo"><img src="assets/logo.ico" alt="Portfolio." class="logo" style="width: 80px; height: auto;"></a>
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
