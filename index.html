@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mark Alexis Cabrera | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Mark Alexis Cabrera, BSIT graduate and full-stack developer.">
+  <script>
+    document.documentElement.classList.add("js");
+    /* Failsafe: never let the loader block the page */
+    setTimeout(function () {
+      document.documentElement.classList.add("ready");
+      var l = document.getElementById("loader");
+      if (l) l.classList.add("done");
+    }, 2500);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><span>...</span></div>
+  <div class="progress" id="progress"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Portfolio.</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch dark or light mode"><span id="themeIcon">☀</span></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="status in" style="--d:.1s"><span class="dot"></span>Fresh graduate, open to work</p>
+        <h1 class="in" style="--d:.25s">Mark Alexis<br>Cabrera</h1>
+        <p class="role in" style="--d:.4s"><span id="typed"></span><span class="caret"></span></p>
+        <p class="lead in" style="--d:.55s">BSIT graduate who builds end-to-end applications, from a university capstone system to Arduino hardware projects.</p>
+        <div class="btn-row in" style="--d:.7s">
+          <a href="assets/resume.pdf" download="Mark_Alexis_Cabrera_Resume.pdf" class="btn primary">Download resume</a>
+          <a href="#projects" class="btn ghost">See projects</a>
+          <a href="#contact" class="btn ghost">Contact me</a>
+        </div>
+      </div>
+      <div class="photo-wrap in" style="--d:.5s">
+        <div class="photo">
+          <!-- Add your picture as assets/profile.jpg. Blank until then. -->
+          <img src="assets/profile.jpg" alt="Photo of Mark Alexis Cabrera" id="profileImg">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="reveal">About</h2>
+      <div class="about-grid reveal">
+        <p>BSIT graduate and full-stack developer with practical experience in software development, IT systems management, and hardware-software integration. I have a record of delivering end-to-end applications, from standalone hardware projects to a comprehensive university capstone system. I am a dedicated, adaptive learner who combines strong technical work with collaborative problem-solving to build accessible, useful technology.</p>
+        <ul class="facts">
+          <li><strong>Status</strong> Fresh graduate</li>
+          <li><strong>Degree</strong> BS Information Technology</li>
+          <li><strong>Location</strong> Muntinlupa City, Metro Manila, Philippines</li>
+          <li><strong>GWA</strong> 1.51</li>
+        </ul>
+      </div>
+
+      <div class="stats reveal">
+        <div><b data-count="500">0</b><span>internship hours</span></div>
+        <div><b data-count="7">0</b><span>projects</span></div>
+        <div><b data-count="1.51" data-dec="2">0</b><span>college GWA</span></div>
+        <div><b data-count="4">0</b><span>years in college</span></div>
+      </div>
+
+      <h3 class="sub reveal">Work experience</h3>
+      <article class="card reveal">
+        <h4>IT Internship / Technical Assistant</h4>
+        <p class="meta">Melanars Lending Corporation · April 11, 2026 to June 24, 2026 · 500 hours rendered</p>
+        <ul class="list">
+          <li><strong>Software development:</strong> Developed and optimized a desktop application using Python to streamline internal operations.</li>
+          <li><strong>Network deployment:</strong> Set up and configured high-performance diskless computer networks.</li>
+          <li><strong>IT infrastructure support:</strong> Handled hardware troubleshooting, maintenance and machine repairs.</li>
+          <li><strong>Data digitalization:</strong> Migrated data to digitize company receipts for faster search.</li>
+        </ul>
+      </article>
+
+      <h3 class="sub reveal">Education</h3>
+      <ol class="timeline reveal">
+        <li><span class="when">2022 to 2026</span><strong>Bachelor of Science in Information Technology</strong>
+          Pamantasan ng Lungsod ng Muntinlupa (3rd to 4th year, 2024 to 2026) and Lyceum of Alabang (1st to 2nd year, 2022 to 2024). Graduated with a GWA of 1.51.</li>
+        <li><span class="when">2020 to 2022</span><strong>Senior High School, IT in Mobile App and Web Development</strong>
+          STI College Alabang (STICA), Grade 11 to 12.</li>
+      </ol>
+
+      <h3 class="sub reveal">Certifications and awards</h3>
+      <div class="accordion reveal">
+        <details>
+          <summary>STI College Alabang</summary>
+          <ul class="list">
+            <li><strong>Certificate of Academic Excellence:</strong> GWA of 90.12 in the First Quarter of A.Y. 2021 to 2022 (Nov 29, 2021).</li>
+            <li><strong>Certificate of Completion:</strong> 80 hours of On-The-Job Training, Feb to May 2022 (Jun 1, 2022).</li>
+            <li><strong>Certificate of Participation:</strong> Work Immersion, Research, Career Advocacy and Culminating Activity Training Program, “Preparing our Youth, the Key for Nation Building”, May 25 to 27, 2022 (Jun 6, 2022). Topics: Self-Awareness in a Post Pandemic World, Ace Your Interview, Keeping at Peace with Your Spirit, Power Dressing Etiquette, Preparing Students for the Jobs of Tomorrow, Psychosocial Support and Social/Emotional Learning, Resume Writing, Cybersecurity Awareness, 2022 The Road Ahead.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Lyceum of Alabang</summary>
+          <ul class="list">
+            <li><strong>Certificate of Recognition:</strong> Top 2 Achiever and Academic Scholar, 1st Semester A.Y. 2022 to 2023, CCS Week (Jun 9, 2023).</li>
+            <li><strong>3rd Place, Digital Circuit:</strong> CCS Week Celebration (May 24, 2024).</li>
+            <li><strong>Computer Programming 1 (Java):</strong> Final grade of 1.25, S.Y. 2022 to 2023 (Jan 27, 2023).</li>
+            <li><strong>Community Service Award:</strong> Joint Graduation of NSTP-CWTS and ROTC, “Strengthening and Empowering Young Leaders Through Volunteerism”, for civic-minded contribution to fellow Filipinos (Jul 8, 2023).</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Pamantasan ng Lungsod ng Muntinlupa</summary>
+          <ul class="list">
+            <li><strong>Certificate of Participation:</strong> “Code + Create + Innovative: The CS Arduino Learning Exhibition”, BSCS(BSIT)-3B, for the Arduino-Based Smart Human-Following Shopping Trolley with Sensor Integration (Nov 26, 2025).</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Graduate and other certifications</summary>
+          <ul class="list">
+            <li>TVL, Information and Communications Technology, Computer Programming, Java and .NET Technology (IT in Mobile App Web Development), Senior High School (Aug 26, 2022).</li>
+            <li>Bachelor of Science Information Technology with a GWA of 1.51 (Jul 16, 2026).</li>
+            <li>Internship Completion, Melanars Lending Corporation and Pamantasan ng Lungsod ng Muntinlupa, 500 hours from April 11 to June 25, 2026. Described as sincere, hardworking, dedicated and detail oriented, and a good team member (Jun 25, 2026).</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2 class="reveal">Services</h2>
+      <div class="grid three">
+        <article class="card tilt reveal"><h3>Web development</h3><p>Responsive front-end sites and full-stack systems with HTML, CSS, JavaScript, PHP, MySQL and React.</p></article>
+        <article class="card tilt reveal"><h3>Software applications</h3><p>Desktop and console applications in Python, Java, C#, C++ and Visual Basic.</p></article>
+        <article class="card tilt reveal"><h3>Hardware and Arduino</h3><p>Sensor-based builds with Arduino, C++ and Proteus, from idea to working prototype.</p></article>
+        <article class="card tilt reveal"><h3>IT support and networks</h3><p>Hardware troubleshooting, repairs and diskless computer network setup.</p></article>
+        <article class="card tilt reveal"><h3>Data digitalization</h3><p>Turning paper records and receipts into searchable digital data.</p></article>
+        <article class="card tilt reveal"><h3>Design and editing</h3><p>Graphics and editing with Adobe Photoshop and Blender.</p></article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="reveal">Skills</h2>
+      <div class="skill-groups">
+        <div class="reveal"><h3>Frontend</h3><div class="chips"><span>JavaScript</span><span>CSS</span><span>PHP</span><span>HTML</span><span>Bootstrap</span><span>Pseudocode</span></div></div>
+        <div class="reveal"><h3>Software applications</h3><div class="chips"><span>Java</span><span>Kotlin</span><span>C#</span><span>C++</span><span>Python</span><span>Visual Basic (VB)</span><span>React.JS</span></div></div>
+        <div class="reveal"><h3>Hardware and data</h3><div class="chips"><span>MySQL</span><span>Assembly</span><span>Proteus</span><span>Arduino</span></div></div>
+        <div class="reveal"><h3>Systems and tools</h3><div class="chips"><span>Linux/Ubuntu</span><span>Pseudocode</span><span>Troubleshooting</span><span>Git</span></div></div>
+        <div class="reveal"><h3>Design</h3><div class="chips"><span>Adobe Photoshop</span><span>Blender</span><span>Editing</span></div></div>
+        <div class="reveal"><h3>Essentials</h3><div class="chips"><span>Office365 / Microsoft Suite</span><span>Power BI</span><span>Orange Mining</span></div></div>
+        <div class="reveal"><h3>Personal strengths</h3><div class="chips soft"><span>Problem-Solving</span><span>Team Collaboration</span><span>Adaptive Learning</span><span>Attention to Detail</span><span>Innovate</span><span>Willing to Learn</span></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="reveal">Projects</h2>
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="hardware">Hardware</button>
+        <button class="filter" data-filter="software">Software</button>
+      </div>
+      <div class="grid three" id="projectGrid">
+        <article class="card tilt project" data-cat="web"><span class="year">2026</span><h3>Student Self-Service and Supply Management System for PLMun</h3><p class="meta">Capstone project · Solo researcher-developer</p><div class="chips small"><span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div></article>
+        <article class="card tilt project" data-cat="hardware"><span class="year">Nov 2025</span><h3>Arduino Smart Human-Following Shopping Trolley</h3><p class="meta">Hardware project · Shown at the CS Arduino Learning Exhibition</p><div class="chips small"><span>Arduino</span><span>C++</span></div></article>
+        <article class="card tilt project" data-cat="hardware"><span class="year">Dec 2024</span><h3>Automated 3-Floor Mini Elevator System</h3><p class="meta">Hardware project</p><div class="chips small"><span>Arduino</span><span>C++</span></div></article>
+        <article class="card tilt project" data-cat="software"><span class="year">Jul 2024</span><h3>SharksApparel UI Inventory System</h3><p class="meta">Research project · Full-stack system developer</p><div class="chips small"><span>VisualBasic.NET</span><span>MySQL</span></div></article>
+        <article class="card tilt project" data-cat="software"><span class="year">Jun 2023</span><h3>BMI Diet Plan Calculator</h3><p class="meta">Python console-based health management program · System developer</p><div class="chips small"><span>Python</span></div></article>
+        <article class="card tilt project" data-cat="software"><span class="year">Jan 2023</span><h3>Potato Corner Console Ordering System</h3><p class="meta">Java console-based ordering system · System developer</p><div class="chips small"><span>Java</span></div></article>
+        <article class="card tilt project" data-cat="web"><span class="year">Jul 2022</span><h3>Emperia Virtual Event Management Platform</h3><p class="meta">Research project · System front-end developer</p><div class="chips small"><span>ReactJS</span></div></article>
+      </div>
+      <p class="note">Source code and newer work: <a href="https://github.com/MarkAlexisJaudianCabrera?tab=repositories" target="_blank" rel="noopener">GitHub repositories</a></p>
+    </section>
+
+    <!-- GITHUB TIMELINE -->
+    <section id="timeline">
+      <h2 class="reveal">GitHub timeline</h2>
+      <div class="chart-wrap reveal">
+        <img src="https://ghchart.rshah.org/2563eb/MarkAlexisJaudianCabrera" alt="GitHub contribution chart for MarkAlexisJaudianCabrera">
+      </div>
+      <a class="btn ghost" href="https://github.com/MarkAlexisJaudianCabrera" target="_blank" rel="noopener">Open full GitHub profile</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="reveal">Contact</h2>
+      <div class="about-grid reveal">
+        <p>I am open to entry-level roles and projects. Send me an email or find me on the links beside this text.</p>
+        <ul class="facts">
+          <li><strong>Email</strong> <a href="mailto:cabreramarkalexisj@gmail.com">cabreramarkalexisj@gmail.com</a></li>
+          <li><strong>Phone</strong> <a href="tel:+639214953607">+63 921 495 3607</a></li>
+          <li><strong>Location</strong> Muntinlupa City, Philippines</li>
+          <li><strong>GitHub</strong> <a href="https://github.com/MarkAlexisJaudianCabrera" target="_blank" rel="noopener">MarkAlexisJaudianCabrera</a></li>
+          <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/mark-alexis-cabrera-50007a282/" target="_blank" rel="noopener">View Profile</a></li>
+          <li><strong>Facebook</strong> <a href="https://www.facebook.com/markalexis.jaudiancabrera.9" target="_blank" rel="noopener">View Profile</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Mark Alexis Cabrera</p></footer>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
